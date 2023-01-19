@@ -57,7 +57,7 @@ def ace_picker(score_list):
 def cpus_game(cpu_list):
     ''''Cpu will keep hitting until hand is > 18 and not blackjack'''
     while current_score(cpu_list) < 17 and current_score(cpu_list) != 21:
-        cpu_cards.append(random.choice(cards))
+        cpu_list.append(random.choice(cards))
         ace_picker(cpu_cards)
 
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
